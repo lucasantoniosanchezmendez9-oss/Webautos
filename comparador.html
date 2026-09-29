@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RedLine Motors | Comparador</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="fondo-decorativo"></div>
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            RED<span>LINE</span>
+        </a>
+
+        <button class="menu-btn" onclick="abrirMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="menu">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="autos.html">
+                <i class="fa-solid fa-car"></i>
+                Autos
+            </a>
+
+            <a href="comparador.html" class="activo">
+                <i class="fa-solid fa-code-compare"></i>
+                Comparador
+            </a>
+
+            <a href="quiz.html">
+                <i class="fa-solid fa-gauge-high"></i>
+                Quiz
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="pagina-titulo">
+
+            <p class="etiqueta">COMPARACIÓN</p>
+
+            <h1>
+                COMPARA
+                <span>AUTOS</span>
+            </h1>
+
+            <p>
+                Selecciona dos vehículos y descubre sus diferencias.
+            </p>
+
+        </section>
+
+
+        <section class="comparador">
+
+            <div class="selector">
+
+                <label for="auto1">
+                    <i class="fa-solid fa-car"></i>
+                    PRIMER AUTO
+                </label>
+
+                <select id="auto1">
+
+                    <option value="phantom">
+                        Red Phantom
+                    </option>
+
+                    <option value="scarlet">
+                        Scarlet X
+                    </option>
+
+                    <option value="crimson">
+                        Crimson GT
+                    </option>
+
+                    <option value="fury">
+                        Red Fury
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="versus">
+                VS
+            </div>
+
+
+            <div class="selector">
+
+                <label for="auto2">
+                    <i class="fa-solid fa-car"></i>
+                    SEGUNDO AUTO
+                </label>
+
+                <select id="auto2">
+
+                    <option value="scarlet">
+                        Scarlet X
+                    </option>
+
+                    <option value="phantom">
+                        Red Phantom
+                    </option>
+
+                    <option value="crimson">
+                        Crimson GT
+                    </option>
+
+                    <option value="fury">
+                        Red Fury
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <button class="btn-rojo comparar-btn"
+                onclick="compararAutos()">
+
+            COMPARAR AHORA
+
+            <i class="fa-solid fa-code-compare"></i>
+
+        </button>
+
+
+        <section id="resultado"
+                 class="resultado">
+
+            <div class="resultado-vacio">
+
+                <i class="fa-solid fa-code-compare"></i>
+
+                <h2>
+                    ESPERANDO COMPARACIÓN
+                </h2>
+
+                <p>
+                    Selecciona dos autos y presiona
+                    "Comparar ahora".
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="informacion-comparador">
+
+            <article>
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>Potencia</h3>
+
+                <p>
+                    Los caballos de fuerza permiten conocer
+                    la potencia del motor.
+                </p>
+
+            </article>
+
+            <article>
+
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h3>Velocidad</h3>
+
+                <p>
+                    Comparamos la velocidad máxima de
+                    cada vehículo.
+                </p>
+
+            </article>
+
+            <article>
+
+                <i class="fa-solid fa-stopwatch"></i>
+
+                <h3>Aceleración</h3>
+
+                <p>
+                    Observa cuánto tarda cada auto en llegar
+                    de 0 a 100 km/h.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <i class="fa-solid fa-car-side"></i>
+            RED<span>LINE</span>
+        </div>
+
+        <p>
+            Velocidad, diseño y tecnología.
+        </p>
+
+        <div class="redes">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+        <small>
+            © 2026 RedLine Motors
+        </small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

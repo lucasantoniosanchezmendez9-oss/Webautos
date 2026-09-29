@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RedLine Motors | Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="fondo-decorativo"></div>
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            RED<span>LINE</span>
+        </a>
+
+        <button class="menu-btn" onclick="abrirMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="menu">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="autos.html">
+                <i class="fa-solid fa-car"></i>
+                Autos
+            </a>
+
+            <a href="comparador.html">
+                <i class="fa-solid fa-code-compare"></i>
+                Comparador
+            </a>
+
+            <a href="quiz.html" class="activo">
+                <i class="fa-solid fa-gauge-high"></i>
+                Quiz
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="pagina-titulo">
+
+            <p class="etiqueta">INTERACTIVO</p>
+
+            <h1>
+                ¿QUÉ AUTO
+                <span>ERES?</span>
+            </h1>
+
+            <p>
+                Responde las preguntas y descubre qué tipo
+                de automóvil representa mejor tus preferencias.
+            </p>
+
+        </section>
+
+
+        <section class="quiz">
+
+            <form id="formQuiz">
+
+
+                <div class="pregunta">
+
+                    <span class="numero">
+                        01
+                    </span>
+
+                    <h2>
+                        ¿Qué característica te interesa más?
+                    </h2>
+
+                    <label>
+
+                        <input type="radio"
+                               name="p1"
+                               value="velocidad">
+
+                        <span>
+                            <i class="fa-solid fa-bolt"></i>
+                            Velocidad
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p1"
+                               value="diseño">
+
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            Diseño
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p1"
+                               value="clasico">
+
+                        <span>
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            Estilo clásico
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="pregunta">
+
+                    <span class="numero">
+                        02
+                    </span>
+
+                    <h2>
+                        ¿Cómo te gustaría conducir?
+                    </h2>
+
+                    <label>
+
+                        <input type="radio"
+                               name="p2"
+                               value="velocidad">
+
+                        <span>
+                            <i class="fa-solid fa-flag-checkered"></i>
+                            Rápido y deportivo
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p2"
+                               value="diseño">
+
+                        <span>
+                            <i class="fa-solid fa-road"></i>
+                            Cómodo y moderno
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p2"
+                               value="clasico">
+
+                        <span>
+                            <i class="fa-solid fa-car-side"></i>
+                            Tranquilo y elegante
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="pregunta">
+
+                    <span class="numero">
+                        03
+                    </span>
+
+                    <h2>
+                        ¿Qué diseño elegirías?
+                    </h2>
+
+                    <label>
+
+                        <input type="radio"
+                               name="p3"
+                               value="velocidad">
+
+                        <span>
+                            <i class="fa-solid fa-fire"></i>
+                            Agresivo
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p3"
+                               value="diseño">
+
+                        <span>
+                            <i class="fa-solid fa-microchip"></i>
+                            Futurista
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p3"
+                               value="clasico">
+
+                        <span>
+                            <i class="fa-solid fa-gem"></i>
+                            Elegante y clásico
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="pregunta">
+
+                    <span class="numero">
+                        04
+                    </span>
+
+                    <h2>
+                        ¿Qué te gustaría sentir al conducir?
+                    </h2>
+
+                    <label>
+
+                        <input type="radio"
+                               name="p4"
+                               value="velocidad">
+
+                        <span>
+                            <i class="fa-solid fa-rocket"></i>
+                            Adrenalina
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p4"
+                               value="diseño">
+
+                        <span>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Estilo
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="p4"
+                               value="clasico">
+
+                        <span>
+                            <i class="fa-solid fa-crown"></i>
+                            Elegancia
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <button type="button"
+                        class="btn-rojo btn-quiz"
+                        onclick="calcularQuiz()">
+
+                    DESCUBRIR MI RESULTADO
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <div id="resultadoQuiz"
+                 class="resultado-quiz">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <i class="fa-solid fa-car-side"></i>
+            RED<span>LINE</span>
+        </div>
+
+        <p>
+            Velocidad, diseño y tecnología.
+        </p>
+
+        <div class="redes">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+        <small>
+            © 2026 RedLine Motors
+        </small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

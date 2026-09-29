@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RedLine Motors | Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="fondo-decorativo"></div>
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            RED<span>LINE</span>
+        </a>
+
+        <button class="menu-btn" onclick="abrirMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="menu">
+
+            <a href="index.html" class="activo">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="autos.html">
+                <i class="fa-solid fa-car"></i>
+                Autos
+            </a>
+
+            <a href="comparador.html">
+                <i class="fa-solid fa-code-compare"></i>
+                Comparador
+            </a>
+
+            <a href="quiz.html">
+                <i class="fa-solid fa-gauge-high"></i>
+                Quiz
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-contenido">
+
+                <p class="etiqueta">
+                    <span></span>
+                    REDLINE AUTOMOTIVE
+                </p>
+
+                <h1>
+                    VELOCIDAD
+                    <br>
+                    <strong>SIN LÍMITES</strong>
+                </h1>
+
+                <p class="hero-texto">
+                    Descubre el mundo de los automóviles deportivos,
+                    la potencia, el diseño y la tecnología que hacen
+                    de cada vehículo una experiencia única.
+                </p>
+
+                <div class="botones">
+
+                    <a href="autos.html" class="btn-rojo">
+                        EXPLORAR AUTOS
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="quiz.html" class="btn-outline">
+                        DESCUBRIR MI AUTO
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-imagen">
+
+                <div class="circulo"></div>
+
+                <img src="imagenes/auto1.jpg"
+                     alt="Auto deportivo rojo">
+
+                <div class="velocidad">
+                    <strong>320</strong>
+                    <span>KM/H</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="estadisticas">
+
+            <article>
+                <i class="fa-solid fa-bolt"></i>
+                <strong>850+</strong>
+                <span>HP MÁXIMOS</span>
+            </article>
+
+            <article>
+                <i class="fa-solid fa-gauge-high"></i>
+                <strong>350</strong>
+                <span>KM/H</span>
+            </article>
+
+            <article>
+                <i class="fa-solid fa-stopwatch"></i>
+                <strong>2.6</strong>
+                <span>0-100 KM/H</span>
+            </article>
+
+            <article>
+                <i class="fa-solid fa-gears"></i>
+                <strong>V8</strong>
+                <span>MOTOR</span>
+            </article>
+
+        </section>
+
+
+        <section class="presentacion">
+
+            <div>
+
+                <p class="etiqueta">SOBRE NOSOTROS</p>
+
+                <h2>
+                    PASIÓN POR LOS
+                    <span>MOTORES</span>
+                </h2>
+
+            </div>
+
+            <p>
+                RedLine Motors es un proyecto dedicado a explorar
+                el mundo automotriz. Aquí puedes conocer diferentes
+                vehículos, comparar sus características y descubrir
+                qué tipo de automóvil se adapta mejor a tus gustos.
+            </p>
+
+        </section>
+
+
+        <section class="caracteristicas">
+
+            <article class="feature-card">
+
+                <i class="fa-solid fa-engine"></i>
+
+                <h3>Potencia</h3>
+
+                <p>
+                    Conoce motores diseñados para ofrecer
+                    grandes niveles de rendimiento.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <h3>Diseño</h3>
+
+                <p>
+                    Líneas deportivas, aerodinámica y diseños
+                    que destacan en la carretera.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <i class="fa-solid fa-microchip"></i>
+
+                <h3>Tecnología</h3>
+
+                <p>
+                    Sistemas modernos que combinan seguridad,
+                    comodidad y rendimiento.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <i class="fa-solid fa-car-side"></i>
+            RED<span>LINE</span>
+        </div>
+
+        <p>
+            Velocidad, diseño y tecnología.
+        </p>
+
+        <div class="redes">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+        <small>
+            © 2026 RedLine Motors
+        </small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
